@@ -46,7 +46,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'images/mural.min.svg': 'images/mural.svg'
+          'images/nola.min.svg': 'images/nola.svg'
         }
       }
     },
@@ -88,7 +88,7 @@ module.exports = function(grunt) {
         }
       },
       html: {
-        files: '*.html',
+        files: ['src/*.jade'],
         options: {
           spawn: false
         }
@@ -107,7 +107,7 @@ module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('default', ['stylus', 'autoprefixer', 'cssmin', 'imagemin', 'svgmin']);
+  grunt.registerTask('default', ['stylus', 'autoprefixer', 'cssmin', 'imagemin', 'svgmin', 'jade']);
 
   grunt.registerTask('dev', ['connect', 'watch']);
 }
