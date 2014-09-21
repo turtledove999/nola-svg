@@ -46,7 +46,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'images/nola.min.svg': 'images/nola.svg'
+          'images/nola.min.svg': 'src/images/nola.svg'
         }
       }
     },
@@ -74,20 +74,20 @@ module.exports = function(grunt) {
         }
       },
       images: {
-        files: ['images/**/*.{png,jpg,gif}', 'images/*.{png,jpg,gif}'],
+        files: ['src/images/**/*.{png,jpg,gif}', 'images/*.{png,jpg,gif}'],
         tasks: ['imagemin'],
         options: {
           spawn: false
         }
       },
       svg: {
-        files: 'images/*.svg',
-        tasks: ['imagemin'],
+        files: 'src/images/*.svg',
+        tasks: ['svgmin'],
         options: {
           spawn: false
         }
       },
-      html: {
+      jade: {
         files: ['src/*.jade'],
         options: {
           spawn: false
