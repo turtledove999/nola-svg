@@ -89,8 +89,9 @@ module.exports = function(grunt) {
       },
       jade: {
         files: ['src/*.jade'],
+        tasks: ['jade'],
         options: {
-          spawn: false
+          spawn: true
         }
       }
     },
