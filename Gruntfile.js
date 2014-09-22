@@ -63,8 +63,10 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      options: {
-        livereload: true
+      livereload: {
+        options: { livereload: 2084 },
+        files: ['css/*', '*.html', 'images/*', 'src/styl/*'],
+        tasks: ['default']
       },
       css: {
         files: ['src/styl/*.styl'],
@@ -82,16 +84,16 @@ module.exports = function(grunt) {
       },
       svg: {
         files: 'src/images/*.svg',
-        tasks: ['svgmin'],
+        tasks: ['svgmin', 'jade'],
         options: {
           spawn: false
         }
       },
       jade: {
-        files: ['src/*.jade'],
+        files: 'src/*.jade',
         tasks: ['jade'],
         options: {
-          spawn: true
+          spawn: false
         }
       }
     },
@@ -110,5 +112,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['stylus', 'autoprefixer', 'cssmin', 'imagemin', 'svgmin', 'jade']);
 
-  grunt.registerTask('dev', ['connect', 'watch']);
+  grunt.registerTask('dev', ['default', 'connect', 'watch']);
 }

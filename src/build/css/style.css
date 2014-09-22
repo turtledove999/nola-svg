@@ -1,3 +1,11 @@
+.bubble-blue {
+  fill: #eaeaea;
+}
+
+.sky-blue {
+  fill: #85d3ff;
+}
+
 body {
   margin: 0;
   padding: 0;
