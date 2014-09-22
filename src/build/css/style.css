@@ -6,6 +6,55 @@
   fill: #85d3ff;
 }
 
+.stern-wheel-shadow {
+  -webkit-animation-name: rolling-on-the-river;
+  animation-name: rolling-on-the-river;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  position: absolute;
+  float: none;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rolling-on-the-river {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes rolling-on-the-river {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rolling-on-the-river {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
