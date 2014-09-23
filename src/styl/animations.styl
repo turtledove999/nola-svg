@@ -12,3 +12,23 @@
   float none
   animation-timing-function linear
   animation-iteration-count infinite
+
+@keyframes fade-in
+  0%
+    opacity 0
+  100%
+    opacity 50%
+
+.bubbles circle
+  animation-name fade-in
+  animation-duration 2s
+  animation-timing-function linear
+  animation-iteration-count infinite
+  &:nth-child(1)
+    animation-delay 0s
+  &:nth-child(2)
+    animation-delay 0.5s
+  &:nth-child(3)
+    animation-delay 1s
+  &:nth-child(4)
+    animation-delay 1.5s

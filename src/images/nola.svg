@@ -1528,9 +1528,11 @@
 <ellipse fill="#FFFFFF" cx="964.2" cy="570.3" rx="12.5" ry="9.6"/>
 <path fill="#FFD6BB" d="M1318.3,559.1c0-0.7-3.1-1.3-6.9-1.3s-6.9,0.6-6.9,1.3l-0.1,19h13.9L1318.3,559.1z"/>
 <path fill="#FFD6BB" d="M1247.1,559.1c0-0.7-3.1-1.3-6.9-1.3c-3.8,0-6.9,0.6-6.9,1.3l-0.1,19h13.9L1247.1,559.1z"/>
-<circle opacity="0.5" class="bubble-blue" cx="371.4" cy="593.8" r="48.2"/>
-<circle opacity="0.5" class="bubble-blue" cx="219.9" cy="433.6" r="104.4"/>
-<circle opacity="0.5" class="bubble-blue" cx="389.2" cy="314.5" r="53.7"/>
-<circle opacity="0.5" class="bubble-blue" cx="274.1" cy="199.4" r="27.2"/>
+<g class="bubbles">
+	<circle opacity="0.5" class="bubble-blue" cx="371.4" cy="593.8" r="48.2"/>
+	<circle opacity="0.5" class="bubble-blue" cx="219.9" cy="433.6" r="104.4"/>
+	<circle opacity="0.5" class="bubble-blue" cx="389.2" cy="314.5" r="53.7"/>
+	<circle opacity="0.5" class="bubble-blue" cx="274.1" cy="199.4" r="27.2"/>
+</g>
 <path fill="#50B55C" d="M2401,1586.4c-112.6-17.4-227.7-26.5-344.7-26.5c-363.1,0-707.3,84.8-1015.7,240.1H2401V1586.4z"/>
 </svg>
