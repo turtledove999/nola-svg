@@ -52,6 +52,25 @@
   animation-delay: 1.5s;
 }
 
+.wave {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.wave:nth-child(odd) {
+  -webkit-animation-name: roll-wave-left;
+  animation-name: roll-wave-left;
+}
+
+.wave:nth-child(even) {
+  -webkit-animation-name: roll-wave-right;
+  animation-name: roll-wave-right;
+}
+
 @-webkit-keyframes rolling-on-the-river {
   0% {
     -webkit-transform: rotate(0);
@@ -113,6 +132,74 @@
 
   100% {
     opacity: 50%;
+  }
+}
+
+@-webkit-keyframes roll-wave-left {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+
+  100% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+  }
+}
+
+@-ms-keyframes roll-wave-left {
+  0% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(-50px);
+  }
+}
+
+@keyframes roll-wave-left {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+
+  100% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+  }
+}
+
+@-webkit-keyframes roll-wave-right {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+  }
+
+  100% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+}
+
+@-ms-keyframes roll-wave-right {
+  0% {
+    transform: translateX(-50px);
+  }
+
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes roll-wave-right {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+  }
+
+  100% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
   }
 }
 

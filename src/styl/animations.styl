@@ -1,3 +1,4 @@
+// Turn the stern wheel!
 @keyframes rolling-on-the-river
   0%
     transform rotate(0deg)
@@ -13,6 +14,7 @@
   animation-timing-function linear
   animation-iteration-count infinite
 
+// Pop the bubbles!
 @keyframes fade-in
   0%
     opacity 0
@@ -32,3 +34,27 @@
     animation-delay 1s
   &:nth-child(4)
     animation-delay 1.5s
+
+// Move the waves!
+@keyframes roll-wave-left
+  0%
+    transform translateX(50px)
+  100%
+    transform translateX(-50px)
+
+@keyframes roll-wave-right
+  0%
+    transform translateX(-50px)
+  100%
+    transform translateX(50px)
+
+.wave
+  animation-duration 1s
+  animation-timing-function linear
+  animation-iteration-count infinite
+
+.wave:nth-child(odd)
+  animation-name roll-wave-left
+
+.wave:nth-child(even)
+  animation-name roll-wave-right
