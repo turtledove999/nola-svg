@@ -2,7 +2,12 @@
 <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg class="nola" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 2400 1800" enable-background="new 0 0 2400 1800" xml:space="preserve">
+	 viewBox="50 0 2400 1800" enable-background="new 0 0 2400 1800" xml:space="preserve" clip-path="url(#clip)">
+	 <defs>
+	 	<clipPath id="clip">
+	 		<rect width="2350" height="1800" rx="0"/>
+	 	</clipPath>
+	 </defs>
 <rect x="0" y="0" class="sky-blue" width="2400" height="1043.4"/>
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1199.2682" y1="1079.8451" x2="1199.2682" y2="231.38">
 	<stop  offset="7.312192e-03" style="stop-color:#004CFF;stop-opacity:0.8"/>

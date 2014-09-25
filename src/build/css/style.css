@@ -53,10 +53,10 @@
 }
 
 .wave {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
@@ -64,6 +64,8 @@
 .wave:nth-child(odd) {
   -webkit-animation-name: roll-wave-left;
   animation-name: roll-wave-left;
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
 }
 
 .wave:nth-child(even) {

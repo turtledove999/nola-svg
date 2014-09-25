@@ -49,12 +49,13 @@
     transform translateX(50px)
 
 .wave
-  animation-duration 1s
-  animation-timing-function linear
+  animation-duration 2s
+  animation-timing-function ease
   animation-iteration-count infinite
 
 .wave:nth-child(odd)
   animation-name roll-wave-left
+  animation-delay 0.5s
 
 .wave:nth-child(even)
   animation-name roll-wave-right
