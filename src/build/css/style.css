@@ -73,6 +73,17 @@
   animation-name: roll-wave-right;
 }
 
+.sky {
+  -webkit-animation-name: darken-sky;
+  animation-name: darken-sky;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
 @-webkit-keyframes rolling-on-the-river {
   0% {
     -webkit-transform: rotate(0);
@@ -202,6 +213,48 @@
   100% {
     -webkit-transform: translateX(50px);
     transform: translateX(50px);
+  }
+}
+
+@-webkit-keyframes darken-sky {
+  0% {
+    fill: #85d3ff;
+  }
+
+  50% {
+    fill: #007cc2;
+  }
+
+  100% {
+    fill: #85d3ff;
+  }
+}
+
+@-ms-keyframes darken-sky {
+  0% {
+    fill: #85d3ff;
+  }
+
+  50% {
+    fill: #007cc2;
+  }
+
+  100% {
+    fill: #85d3ff;
+  }
+}
+
+@keyframes darken-sky {
+  0% {
+    fill: #85d3ff;
+  }
+
+  50% {
+    fill: #007cc2;
+  }
+
+  100% {
+    fill: #85d3ff;
   }
 }
 

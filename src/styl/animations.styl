@@ -59,3 +59,18 @@
 
 .wave:nth-child(even)
   animation-name roll-wave-right
+
+// Darken the sky slightly
+@keyframes darken-sky
+  0%
+    fill $sky-blue
+  50%
+    fill darken($sky-blue, 50%)
+  100%
+    fill $sky-blue
+
+.sky
+  animation-name darken-sky
+  animation-duration 10s
+  animation-timing-function ease-in-out
+  animation-iteration-count infinite
