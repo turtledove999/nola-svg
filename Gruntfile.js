@@ -42,6 +42,12 @@ module.exports = function(grunt) {
       options: {
         plugins: [{
           removeViewBox: false
+        },
+        {
+          mergePaths: false
+        },
+        {
+          sortAttrs: true
         }]
       },
       dist: {
@@ -65,7 +71,7 @@ module.exports = function(grunt) {
     watch: {
       livereload: {
         options: { livereload: 2084 },
-        files: ['css/*', '*.html', 'images/*', 'src/styl/*'],
+        files: ['*.html', 'images/*', 'css/*.css', 'src/styl/*.styl'],
         tasks: ['default']
       },
       css: {

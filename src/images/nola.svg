@@ -4,10 +4,10 @@
 <svg class="nola" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="50 0 2400 1800" enable-background="new 0 0 2400 1800" xml:space="preserve" clip-path="url(#clip)">
 	 <defs>
-	 	<clipPath id="clip">
+ 	 	<clipPath id="clip">
 	 		<rect width="2350" height="1800" rx="0"/>
 	 	</clipPath>
-	 </defs>
+	 </defs> 
 <rect x="0" y="0" class="sky-blue sky" width="2400" height="1043.4"/>
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1199.2682" y1="1079.8451" x2="1199.2682" y2="231.38">
 	<stop  offset="7.312192e-03" style="stop-color:#004CFF;stop-opacity:0.8"/>
@@ -1401,7 +1401,7 @@
               dur="1s"
               repeatCount="indefinite"/> -->
 	</path>
-	<path class="steamboat" fill="#FFFFFF" d="M1629.1,1573l458.9-458.9l-11.2-11.2l-42.8,42.8c-45.7-40.6-102.2-62.6-159.7-66v-60.6h-31.6v60.6
+	<path class="stern-wheel" fill="#FFFFFF" d="M1629.1,1573l458.9-458.9l-11.2-11.2l-42.8,42.8c-45.7-40.6-102.2-62.6-159.7-66v-60.6h-31.6v60.6
 		c-57.4,3.4-114,25.4-159.7,66l-42.8-42.8l-22.3,22.3l42.8,42.8c-40.6,45.7-62.6,102.2-66,159.7H1534v31.6h60.6
 		c3.4,57.4,25.4,114,66,159.7l-42.8,42.8L1629.1,1573z M1728.6,1451.1c-22.2-26.8-34.9-58.9-37.9-91.8h129.7L1728.6,1451.1z
 		 M1820.3,1327.8h-129.7c3.1-32.9,15.7-65,37.9-91.8L1820.3,1327.8z M1750.9,1213.7c26.8-22.2,58.9-34.9,91.8-37.9v129.7
