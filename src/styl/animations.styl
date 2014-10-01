@@ -75,6 +75,59 @@
   animation-timing-function ease-in-out
   animation-iteration-count infinite
 
-// // House lights
-// @keyframes house-lights
-//   0%
+// House lights
+@keyframes house-lights
+  0%
+    fill $sky-blue
+  50%
+    fill $lightbulb-yellow
+  100%
+    fill $sky-blue
+
+.window
+  animation-name house-lights
+  animation-duration 10s
+  animation-timing-function linear
+  animation-iteration-count infinite
+
+@keyframes darken-peach-house
+  0%
+    fill $peach
+  50%
+    fill darken($peach, 20%)
+  100%
+    fill $peach
+
+.peach.house
+  animation-name darken-peach-house
+  animation-duration 10s
+  animation-timing-function linear
+  animation-iteration-count infinite
+
+@keyframes darken-lemon-house
+  0%
+    fill $lemon
+  50%
+    fill darken($lemon, 40%)
+  100%
+    fill $lemon
+
+.lemon.house
+  animation-name darken-lemon-house
+  animation-duration 10s
+  animation-timing-function linear
+  animation-iteration-count infinite
+
+@keyframes darken-orange-house
+  0%
+    fill $orange
+  50%
+    fill darken($orange, 20%)
+  100%
+    fill $orange
+
+.orange.house
+  animation-name darken-orange-house
+  animation-duration 10s
+  animation-timing-function linear
+  animation-iteration-count infinite

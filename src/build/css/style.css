@@ -6,6 +6,22 @@
   fill: #85d3ff;
 }
 
+.window {
+  fill: #85d3ff;
+}
+
+.peach {
+  fill: #ffbe8d;
+}
+
+.lemon {
+  fill: #f9ed32;
+}
+
+.orange {
+  fill: #ff7300;
+}
+
 .stern-wheel-shadow {
   -webkit-animation-name: rolling-on-the-river;
   animation-name: rolling-on-the-river;
@@ -80,6 +96,50 @@
   animation-duration: 10s;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.window {
+  -webkit-animation-name: house-lights;
+  animation-name: house-lights;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.peach.house {
+  -webkit-animation-name: darken-peach-house;
+  animation-name: darken-peach-house;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.lemon.house {
+  -webkit-animation-name: darken-lemon-house;
+  animation-name: darken-lemon-house;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.orange.house {
+  -webkit-animation-name: darken-orange-house;
+  animation-name: darken-orange-house;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
@@ -258,28 +318,176 @@
   }
 }
 
+@-webkit-keyframes house-lights {
+  0% {
+    fill: #85d3ff;
+  }
+
+  50% {
+    fill: #f9ed32;
+  }
+
+  100% {
+    fill: #85d3ff;
+  }
+}
+
+@-ms-keyframes house-lights {
+  0% {
+    fill: #85d3ff;
+  }
+
+  50% {
+    fill: #f9ed32;
+  }
+
+  100% {
+    fill: #85d3ff;
+  }
+}
+
+@keyframes house-lights {
+  0% {
+    fill: #85d3ff;
+  }
+
+  50% {
+    fill: #f9ed32;
+  }
+
+  100% {
+    fill: #85d3ff;
+  }
+}
+
+@-webkit-keyframes darken-peach-house {
+  0% {
+    fill: #ffbe8d;
+  }
+
+  50% {
+    fill: #ff913e;
+  }
+
+  100% {
+    fill: #ffbe8d;
+  }
+}
+
+@-ms-keyframes darken-peach-house {
+  0% {
+    fill: #ffbe8d;
+  }
+
+  50% {
+    fill: #ff913e;
+  }
+
+  100% {
+    fill: #ffbe8d;
+  }
+}
+
+@keyframes darken-peach-house {
+  0% {
+    fill: #ffbe8d;
+  }
+
+  50% {
+    fill: #ff913e;
+  }
+
+  100% {
+    fill: #ffbe8d;
+  }
+}
+
+@-webkit-keyframes darken-lemon-house {
+  0% {
+    fill: #f9ed32;
+  }
+
+  50% {
+    fill: #aea405;
+  }
+
+  100% {
+    fill: #f9ed32;
+  }
+}
+
+@-ms-keyframes darken-lemon-house {
+  0% {
+    fill: #f9ed32;
+  }
+
+  50% {
+    fill: #aea405;
+  }
+
+  100% {
+    fill: #f9ed32;
+  }
+}
+
+@keyframes darken-lemon-house {
+  0% {
+    fill: #f9ed32;
+  }
+
+  50% {
+    fill: #aea405;
+  }
+
+  100% {
+    fill: #f9ed32;
+  }
+}
+
+@-webkit-keyframes darken-orange-house {
+  0% {
+    fill: #ff7300;
+  }
+
+  50% {
+    fill: #cc5c00;
+  }
+
+  100% {
+    fill: #ff7300;
+  }
+}
+
+@-ms-keyframes darken-orange-house {
+  0% {
+    fill: #ff7300;
+  }
+
+  50% {
+    fill: #cc5c00;
+  }
+
+  100% {
+    fill: #ff7300;
+  }
+}
+
+@keyframes darken-orange-house {
+  0% {
+    fill: #ff7300;
+  }
+
+  50% {
+    fill: #cc5c00;
+  }
+
+  100% {
+    fill: #ff7300;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background: #000;
-}
-
-.stage {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  overflow: hidden;
-}
-
-.nola {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  display: block;
-  height: 100%;
-  z-index: 1;
-  margin: 0 auto;
 }
